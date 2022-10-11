@@ -4,6 +4,8 @@
 
 @layer base {
 	body {
-		@apply bg-gray-800 w-screen h-screen container p-5;
+		@apply w-screen h-screen container p-5 bg-cover backdrop-blur-[4px] bg-[url("./assets/bg.jpg")];
 	}
 }
+
+/* bg-gradient-to-r from-cyan-700 to-blue-400 */
