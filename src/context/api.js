@@ -7,7 +7,7 @@ export const fetchWeatherApi = async ({ latitude, longitude }) => {
 	const res = await axios(
 		`${weather_url}?&lang=TR&days=7&lat=${latitude}&lon=${longitude}&days=7&key=${process.env.REACT_APP_WEATHER_API_KEY}`
 	);
-	console.log(res.data);
+	// console.log(res.data);
 	return res.data;
 };
 
@@ -15,6 +15,6 @@ export const fetchCityApi = async (cityName) => {
 	const res = await axios(`${geocoding_url}?city=${cityName}`, {
 		headers: { "X-Api-Key": process.env.REACT_APP_APININJAS_API_KEY },
 	});
-	console.log(res.data);
+	// console.log(res.data);
 	return res.data[0];
 };
