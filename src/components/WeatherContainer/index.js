@@ -17,6 +17,7 @@ function WeatherContainer() {
 
 	useEffect(() => {
 		dispatch(getWeatherAsync(city));
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [city]);
 
 	const handleSubmit = async (e) => {
@@ -26,7 +27,7 @@ function WeatherContainer() {
 	};
 
 	return (
-		<div>
+		<div className="mt-24 box-border w-min-[350px] h-min-[300px] mx-auto flex flex-col items-center">
 			{
 				<WeatherForm
 					cityName={cityName}
