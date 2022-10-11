@@ -24,7 +24,7 @@ const initialState = {
 	data: {},
 	error: null,
 	getWeatherisLoading: true,
-	getCityisLoading: true,
+	getCityisLoading: false,
 };
 const weatherSlice = createSlice({
 	name: "weather",
